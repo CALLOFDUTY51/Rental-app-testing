@@ -64,7 +64,7 @@ function ListingDetails() {
       endDate:dateRange[0].endDate.toDateString(),
       totalPrice:listing.price*dayCount 
     }
-    const apiUrl = import.meta.env.VITE_API_URL; 
+     
     const url = `${apiUrl}/listings/${listingId}`;     // Combine with the endpoint
 
     axios.post(url,bookingForm)
